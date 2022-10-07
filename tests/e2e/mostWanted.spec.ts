@@ -8,7 +8,7 @@ test.describe('Most Wanted products', () => {
     await mostWantedPage.loadMostWantedpage();
   });
 
-  test('Assert URL', async ({ page }) => {
+  test('Assert Most Wanted URL', async ({ page }) => {
     expect(page).toHaveURL('/product-category/most-wanted/');
   });
 });

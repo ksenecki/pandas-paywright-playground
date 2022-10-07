@@ -23,66 +23,26 @@ test.describe('Visual tests for Categories', () => {
     });
   });
 
-  test('Categories Shirts visual test', async ({ page }) => {
-    await page.goto('/product-category/shirts/');
-    expect(await page.screenshot()).toMatchSnapshot('categories-shirts.png', {
-      threshold: 0.2,
+  const categories = [
+    'Shirts',
+    'Featured',
+    'Trends',
+    'Scarfs',
+    'Shoes',
+    'Tops',
+    'Blouse',
+    'Jeans',
+    'Dresses',
+  ];
+  for (const category of categories) {
+    test(`Categories list: ${category}`, async ({ page }) => {
+      await page.goto(`/product-category/${category}/`);
+      expect(await page.screenshot()).toMatchSnapshot(
+        `categories-${category}.png`,
+        {
+          threshold: 0.2,
+        }
+      );
     });
-  });
-
-  test('Categories Featured visual test', async ({ page }) => {
-    await page.goto('/product-category/featured/');
-    expect(await page.screenshot()).toMatchSnapshot('categories-featured.png', {
-      threshold: 0.2,
-    });
-  });
-
-  test('Categories Trends visual test', async ({ page }) => {
-    await page.goto('/product-category/trends/');
-    expect(await page.screenshot()).toMatchSnapshot('categories-trends.png', {
-      threshold: 0.2,
-    });
-  });
-
-  test('Categories Scarfs visual test', async ({ page }) => {
-    await page.goto('/product-category/scarfs/');
-    expect(await page.screenshot()).toMatchSnapshot('categories-scarfs.png', {
-      threshold: 0.2,
-    });
-  });
-
-  test('Categories Shoes visual test', async ({ page }) => {
-    await page.goto('/product-category/shoes/');
-    expect(await page.screenshot()).toMatchSnapshot('categories-shoes.png', {
-      threshold: 0.2,
-    });
-  });
-
-  test('Categories Tops visual test', async ({ page }) => {
-    await page.goto('/product-category/tops/');
-    expect(await page.screenshot()).toMatchSnapshot('categories-tops.png', {
-      threshold: 0.2,
-    });
-  });
-
-  test('Categories Blouse visual test', async ({ page }) => {
-    await page.goto('/product-category/blouse/');
-    expect(await page.screenshot()).toMatchSnapshot('categories-blouse.png', {
-      threshold: 0.2,
-    });
-  });
-
-  test('Categories Jeans visual test', async ({ page }) => {
-    await page.goto('/product-category/jeans/');
-    expect(await page.screenshot()).toMatchSnapshot('categories-jeans.png', {
-      threshold: 0.2,
-    });
-  });
-
-  test('Categories Dresses visual test', async ({ page }) => {
-    await page.goto('/product-category/dresses/');
-    expect(await page.screenshot()).toMatchSnapshot('categories-dresses.png', {
-      threshold: 0.2,
-    });
-  });
+  }
 });
