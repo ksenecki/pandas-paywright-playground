@@ -38,3 +38,16 @@ automation e2e tests for `http://skleptest.pl/`
 ## Debugging
 
 - use `--debug` while debugging
+
+## Allure reporting
+
+- install [Allure for Playwright](https://github.com/allure-framework/allure-js/blob/master/packages/allure-playwright/README.md)
+- install command line for Allure `npm install -g allure-commandline`
+- install JAVA `sudo apt install default-jdk`
+- configure JAVA update-alternatives --config java
+- open `sudo nano /etc/environment`
+- add `JAVA_HOME="/lib/jvm/java-11-openjdk-amd64/bin/java"` at the end of the file
+- save and force envs to reload `source /etc/environment`
+- check envs with `echo $JAVA_HOME`
+- generate report `allure generate allure-results -o allure-report --clean`
+- open Allure report `allure open allure-report`

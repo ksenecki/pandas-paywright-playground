@@ -1,0 +1,211 @@
+{
+  "uid": "9a24cdea9ddb1664",
+  "name": "Categories list: Blouse",
+  "fullName": "Categories list: Blouse",
+  "historyId": "Chromium openHomepage.spec.ts Open Homepage Categories list: Blouse",
+  "time": { "start": 1665319686276, "stop": 1665319687726, "duration": 1450 },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Before Hooks",
+        "time": {
+          "start": 1665319686276,
+          "stop": 1665319687220,
+          "duration": 944
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "beforeEach hook",
+            "time": {
+              "start": 1665319686277,
+              "stop": 1665319687220,
+              "duration": 943
+            },
+            "status": "passed",
+            "steps": [
+              {
+                "name": "browserContext.newPage",
+                "time": {
+                  "start": 1665319686279,
+                  "stop": 1665319686324,
+                  "duration": 45
+                },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "stepsCount": 0,
+                "attachmentsCount": 0,
+                "shouldDisplayMessage": false,
+                "hasContent": false
+              },
+              {
+                "name": "page.goto(/)",
+                "time": {
+                  "start": 1665319686324,
+                  "stop": 1665319687188,
+                  "duration": 864
+                },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "stepsCount": 0,
+                "attachmentsCount": 0,
+                "shouldDisplayMessage": false,
+                "hasContent": false
+              },
+              {
+                "name": "expect.toContainText",
+                "time": {
+                  "start": 1665319687189,
+                  "stop": 1665319687220,
+                  "duration": 31
+                },
+                "status": "passed",
+                "steps": [],
+                "attachments": [],
+                "parameters": [],
+                "stepsCount": 0,
+                "attachmentsCount": 0,
+                "shouldDisplayMessage": false,
+                "hasContent": false
+              }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 3,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": true
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 4,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "locator.hover(a[title='Catergries'])",
+        "time": {
+          "start": 1665319687221,
+          "stop": 1665319687257,
+          "duration": 36
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "locator.click(a[title='Blouse'])",
+        "time": {
+          "start": 1665319687258,
+          "stop": 1665319687522,
+          "duration": 264
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "expect.toHaveURL",
+        "time": {
+          "start": 1665319687525,
+          "stop": 1665319687563,
+          "duration": 38
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "After Hooks",
+        "time": {
+          "start": 1665319687527,
+          "stop": 1665319687726,
+          "duration": 199
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "browserContext.close",
+            "time": {
+              "start": 1665319687717,
+              "stop": 1665319687724,
+              "duration": 7
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "shouldDisplayMessage": false,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 1,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "stepsCount": 10,
+    "attachmentsCount": 0,
+    "shouldDisplayMessage": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    { "name": "language", "value": "JavaScript" },
+    { "name": "framework", "value": "Playwright" },
+    { "name": "parentSuite", "value": "Chromium" },
+    { "name": "subSuite", "value": "Open Homepage" },
+    { "name": "host", "value": "Panda-Ubuntu" },
+    { "name": "thread", "value": "Panda-Ubuntu-13686-playwright-worker-0" },
+    { "name": "resultFormat", "value": "allure2" }
+  ],
+  "parameters": [],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "9a24cdea9ddb1664.json",
+  "parameterValues": []
+}
