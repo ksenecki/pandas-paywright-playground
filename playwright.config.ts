@@ -4,6 +4,16 @@ const config: PlaywrightTestConfig = {
   timeout: 60000,
   retries: 0,
   testDir: 'tests/e2e',
+  reporter: [
+    [
+      'allure-playwright',
+      {
+        detail: true,
+        outputFolder: 'allure-results',
+        suiteTitle: false,
+      },
+    ],
+  ],
   use: {
     headless: true,
     baseURL: 'http://skleptest.pl/',

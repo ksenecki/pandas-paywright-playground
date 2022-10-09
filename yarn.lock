@@ -350,13 +350,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
-"@playwright/test@^1.25.2":
-  "integrity" "sha512-6qPznIR4Fw02OMbqXUPMG6bFFg1hDVNEdihKy0t9K0dmRbus1DyP5Q5XFQhGwEHQkLG5hrSfBuu9CW/foqhQHQ=="
-  "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.25.2.tgz"
-  "version" "1.25.2"
+"@playwright/test@^1.27.0":
+  "integrity" "sha512-L4BswoJvGkFsEHhEgzVNHBnkFB1FbnBQn3QmvTl7+AouoJQ4a8tLwZKvytdovCsNi7B5cXuRo58yGvfM5PnExw=="
+  "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.27.0.tgz"
+  "version" "1.27.0"
   dependencies:
     "@types/node" "*"
-    "playwright-core" "1.25.2"
+    "playwright-core" "1.27.0"
 
 "@trivago/prettier-plugin-sort-imports@^3.3.0":
   "integrity" "sha512-1y44bVZuIN0RsS3oIiGd5k8Vm3IZXYZnp4VsP2Z/S5L9WAOw43HE2clso66M2S/dDeJ+8sKPqnHsEfh39Vjs3w=="
@@ -403,6 +403,22 @@
     "fast-json-stable-stringify" "^2.0.0"
     "json-schema-traverse" "^0.4.1"
     "uri-js" "^4.2.2"
+
+"allure-js-commons@2.0.0-beta.19":
+  "integrity" "sha512-sgt7TnU7s8QIzEOmLFO0T5ih4W2YbLrcsL1ElO7WN/dPzIww4G1BBJQDK98VCS+cG5qIljBYRuJ+rtzKWgtM8A=="
+  "resolved" "https://registry.npmjs.org/allure-js-commons/-/allure-js-commons-2.0.0-beta.19.tgz"
+  "version" "2.0.0-beta.19"
+  dependencies:
+    "mkdirp" "^1.0.4"
+    "properties" "^1.2.1"
+    "uuid" "^8.3.0"
+
+"allure-playwright@^2.0.0-beta.19":
+  "integrity" "sha512-TMSZToE0oPXz0qfH1cMaO5kcMrV8GkSlM1650Hk9dwpR/ldH2zx23/E7l1f77Elpqp/bGNyekjXNhYSx9ihCVg=="
+  "resolved" "https://registry.npmjs.org/allure-playwright/-/allure-playwright-2.0.0-beta.19.tgz"
+  "version" "2.0.0-beta.19"
+  dependencies:
+    "allure-js-commons" "2.0.0-beta.19"
 
 "ansi-escapes@^4.3.0":
   "integrity" "sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ=="
@@ -1167,6 +1183,11 @@
   dependencies:
     "brace-expansion" "^1.1.7"
 
+"mkdirp@^1.0.4":
+  "integrity" "sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw=="
+  "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
+  "version" "1.0.4"
+
 "ms@2.1.2":
   "integrity" "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
   "resolved" "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
@@ -1300,10 +1321,10 @@
   "resolved" "https://registry.npmjs.org/pidtree/-/pidtree-0.6.0.tgz"
   "version" "0.6.0"
 
-"playwright-core@1.25.2":
-  "integrity" "sha512-0yTbUE9lIddkEpLHL3u8PoCL+pWiZtj5A/j3U7YoNjcmKKDGBnCrgHJMzwd2J5vy6l28q4ki3JIuz7McLHhl1A=="
-  "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.25.2.tgz"
-  "version" "1.25.2"
+"playwright-core@1.27.0":
+  "integrity" "sha512-VBKaaFUVKDo3akW+o4DwbK1ZyXh46tcSwQKPK3lruh8IJd5feu55XVZx4vOkbb2uqrNdIF51sgsadYT533SdpA=="
+  "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.27.0.tgz"
+  "version" "1.27.0"
 
 "prelude-ls@^1.2.1":
   "integrity" "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="
@@ -1314,6 +1335,11 @@
   "integrity" "sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g=="
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz"
   "version" "2.7.1"
+
+"properties@^1.2.1":
+  "integrity" "sha512-qYNxyMj1JeW54i/EWEFsM1cVwxJbtgPp8+0Wg9XjNaK6VE/c4oRi6PNu5p7w1mNXEIQIjV5Wwn8v8Gz82/QzdQ=="
+  "resolved" "https://registry.npmjs.org/properties/-/properties-1.2.1.tgz"
+  "version" "1.2.1"
 
 "punycode@^2.1.0":
   "integrity" "sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A=="
@@ -1565,6 +1591,11 @@
   "version" "4.4.1"
   dependencies:
     "punycode" "^2.1.0"
+
+"uuid@^8.3.0":
+  "integrity" "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
+  "resolved" "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
+  "version" "8.3.2"
 
 "which@^2.0.1":
   "integrity" "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA=="
