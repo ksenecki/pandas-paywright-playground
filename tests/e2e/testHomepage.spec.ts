@@ -1,9 +1,11 @@
 import { HomePage } from '@page-objects/HomePage';
 import { expect, Page, test } from '@playwright/test';
+import { allure } from 'allure-playwright';
 
-test.describe.only('Open Homepage', () => {
+test.describe('Open Homepage', () => {
   let homePage: HomePage;
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async ({ page }, testInfo) => {
+    allure.suite('E2E: HomePage');
     homePage = new HomePage(page);
     await homePage.loadHomepage();
   });
