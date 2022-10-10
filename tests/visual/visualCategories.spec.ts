@@ -1,9 +1,11 @@
 import { HomePage } from '@page-objects/HomePage';
 import { expect, test } from '@playwright/test';
+import { allure } from 'allure-playwright';
 
 test.describe('Visual tests for Categories', () => {
   let homePage: HomePage;
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async ({ page }, testInfo) => {
+    allure.suite('Categories');
     homePage = new HomePage(page);
     await homePage.loadHomepage();
   });

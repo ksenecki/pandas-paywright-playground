@@ -6,16 +6,16 @@ automation e2e tests for `http://skleptest.pl/`
 
 ## Project requirements
 
-1. [Node 14+](https://nodejs.org/en/docs/)
+1. [Node 16+](https://nodejs.org/en/docs/)
 2. optional [yarn](https://yarnpkg.com/package/doc)
 
 ## How to setup the Project
 
 1. Clone repository
 2. Enter the project directory and execute `npm install` in order to install all the packages
-3. Using `yarn` is an alternative
+3. `yarn` can be used as an alternative
 
-## Install Playwright
+## Install Playwright with npm
 
 1. npm install @playwright/test
 2. npx playwright install
@@ -45,9 +45,9 @@ automation e2e tests for `http://skleptest.pl/`
 - install [Allure for Playwright](https://github.com/allure-framework/allure-js/blob/master/packages/allure-playwright/README.md)
 - install command line for Allure `npm install -g allure-commandline`
 - install JAVA `sudo apt install default-jdk`
-- configure JAVA update-alternatives --config java
+- configure JAVA `update-alternatives --config java`
 - open `sudo nano /etc/environment`
-- add `JAVA_HOME="/lib/jvm/java-11-openjdk-amd64/bin/java"` at the end of the file
+- add `JAVA_HOME="/lib/jvm/java-11-openjdk-amd64/"` at the end of the file
 - save and force envs to reload `source /etc/environment`
 - check envs with `echo $JAVA_HOME`
 - generate report `allure generate allure-results -o allure-report --clean`
