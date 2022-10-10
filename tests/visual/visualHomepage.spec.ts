@@ -5,7 +5,7 @@ import { allure } from 'allure-playwright';
 test.describe('Visual tests for Homepage', () => {
   let homePage: HomePage;
   test.beforeEach(async ({ page }, testInfo) => {
-    allure.suite('Homepage');
+    allure.suite('Visual: Homepage');
     homePage = new HomePage(page);
     await homePage.loadHomepage();
   });

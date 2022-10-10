@@ -5,7 +5,7 @@ import { allure } from 'allure-playwright';
 test.describe('Visual tests for Categories', () => {
   let homePage: HomePage;
   test.beforeEach(async ({ page }, testInfo) => {
-    allure.suite('Categories');
+    allure.suite('Visual: Categories');
     homePage = new HomePage(page);
     await homePage.loadHomepage();
   });

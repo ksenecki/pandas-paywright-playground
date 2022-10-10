@@ -15,6 +15,7 @@ export class HomePage {
   readonly newsletterEmail: Locator;
   readonly newsletterSubmitButton: Locator;
   readonly mainSlider: Locator;
+  readonly footerTags: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -31,6 +32,7 @@ export class HomePage {
     this.newsletterEmail = page.locator('#es_txt_email');
     this.newsletterSubmitButton = page.locator('#es_txt_button');
     this.mainSlider = page.locator('.main-slider-bar');
+    this.footerTags = page.locator('.tagcloud a');
   }
 
   async loadHomepage() {
