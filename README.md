@@ -36,6 +36,12 @@ automation e2e tests for `http://skleptest.pl/`
 - update snapshots `npx playwright test --config=visual.config.ts --update-snapshots`
 - generate custom screenshots with `npx playwright screenshot --device="iPhone 11" --color-scheme=dark --wait-for-timeout=3000 http://skleptest.pl/ testshop-iphone-image.png`
 
+## API tests
+
+Simple API tests using `https://reqres.in/`, `https://jsonplaceholder.typicode.com/` or `https://httpbin.org/`
+
+- run `npx playwright test --config=api.config.ts`
+
 ## Debugging
 
 - use `--debug` while debugging
