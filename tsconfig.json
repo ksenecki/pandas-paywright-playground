@@ -99,7 +99,8 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "baseUrl": ".",
     "paths": {
-      "@page-objects/*": ["page-objects/*"]
+      "@page-objects/*": ["page-objects/*"],
+      "@utils/*": ["utils/*"]
     }
   }
 }

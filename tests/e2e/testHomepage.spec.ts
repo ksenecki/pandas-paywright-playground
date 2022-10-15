@@ -1,5 +1,6 @@
 import { HomePage } from '@page-objects/HomePage';
 import { expect, Page, test } from '@playwright/test';
+import { getRandomNumber, getRandomString } from '@utils/data-helpers';
 import { allure } from 'allure-playwright';
 
 test.describe('Open Homepage', () => {
