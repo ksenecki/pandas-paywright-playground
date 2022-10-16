@@ -1,16 +1,9 @@
 import * as crypto from 'crypto';
 
-const validLogin = '';
-const validPassword = '';
-const wrongLogin = '';
-const wrongPassword = '';
-
-module.exports = {
-  validLogin,
-  validPassword,
-  wrongLogin,
-  wrongPassword,
-};
+export const validLogin = '';
+export const validPassword = '';
+export const wrongLogin = '';
+export const wrongPassword = '';
 
 export async function getRandomNumber() {
   return Math.floor(Math.random() * 1000 + 1);
