@@ -3,6 +3,7 @@ import { expect, Locator, Page } from '@playwright/test';
 export class HomePage {
   readonly page: Page;
   readonly siteTitle: Locator;
+  readonly myAccountButton: Locator;
   readonly shopNavButton: Locator;
   readonly wantedNavButton: Locator;
   readonly categoriesNavButton: Locator;
@@ -20,6 +21,7 @@ export class HomePage {
   constructor(page: Page) {
     this.page = page;
     this.siteTitle = page.locator("a[class='site-title']");
+    this.myAccountButton = page.locator('top-account');
     this.shopNavButton = page.locator("a[title='Shop']");
     this.wantedNavButton = page.locator("a[title='Most Wanted']");
     this.categoriesNavButton = page.locator("a[title='Catergries']");
@@ -35,7 +37,7 @@ export class HomePage {
     this.footerTags = page.locator('.tagcloud a');
   }
 
-  async loadHomepage() {
+  async loadHomePage() {
     const pageTitle = await this.siteTitle;
     await this.page.goto('/');
     await expect(pageTitle).toContainText('Generic Shop');
