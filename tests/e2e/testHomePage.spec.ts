@@ -8,25 +8,25 @@ test.describe('Open Homepage', () => {
   test.beforeEach(async ({ page }, testInfo) => {
     allure.suite('E2E: HomePage');
     homePage = new HomePage(page);
-    await homePage.loadHomepage();
+    await homePage.loadHomePage();
   });
 
-  test('Shop nav button', async ({ page }) => {
+  test('Go back to the main page', async ({ page }) => {
     await homePage.shopNavButton.click();
     expect(page).toHaveURL('/');
   });
 
-  test('Most Wanted nav button', async ({ page }) => {
+  test('Go to toe Most Wanted', async ({ page }) => {
     await homePage.wantedNavButton.click();
     expect(page).toHaveURL('/product-category/most-wanted/');
   });
 
-  test('Categories nav button', async ({ page }) => {
+  test('Test Categories nav button', async ({ page }) => {
     await homePage.categoriesNavButton.hover();
     expect(page).toHaveURL('/');
   });
 
-  test('Categories list: All', async ({ page }) => {
+  test('Go to All category', async ({ page }) => {
     await homePage.categoriesNavButton.hover();
     const chosenCategory = await page.locator("a[title='All']");
     await chosenCategory.click();
@@ -45,7 +45,7 @@ test.describe('Open Homepage', () => {
     'Dresses',
   ];
   for (const category of categories) {
-    test(`Categories list: ${category}`, async ({ page }) => {
+    test(`Go to ${category} category`, async ({ page }) => {
       await homePage.categoriesNavButton.hover();
       const chosenCategory = await page.locator(`a[title='${category}']`);
       await chosenCategory.click();
@@ -53,18 +53,23 @@ test.describe('Open Homepage', () => {
     });
   }
 
-  test('About Us nav button', async ({ page }) => {
+  test('Go to About Us page', async ({ page }) => {
     await homePage.aboutUsNavButton.click();
     expect(page).toHaveURL('/about-us/');
   });
 
-  test('Contact nav button', async ({ page }) => {
+  test('Go to Contact page', async ({ page }) => {
     await homePage.contactNavButton.click();
     expect(page).toHaveURL('/contact/');
   });
 
-  test('Blog Us nav button', async ({ page }) => {
+  test('Go to Blog page', async ({ page }) => {
     await homePage.blogNavButton.click();
     expect(page).toHaveURL('/blog/');
+  });
+
+  test('Go to My Account page', async ({ page }) => {
+    await homePage.blogNavButton.click();
+    expect(page).toHaveURL('/my-account/');
   });
 });

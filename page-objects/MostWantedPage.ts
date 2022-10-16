@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test';
+import { expect, Locator, Page } from '@playwright/test';
 
 export class MostWantedPage {
   readonly page: Page;
@@ -8,15 +8,13 @@ export class MostWantedPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.pageTitle = page.locator(
-      "[class='woocommerce-products-header__title page-title']"
-    );
+    this.pageTitle = page.locator('.page-title');
     this.filterSelector = page.locator("select[class='orderby']");
     this.productsList = page.locator("ul[class='products']");
   }
 
   async loadMostWantedpage() {
     await this.page.goto('/product-category/most-wanted/');
-    //todo: assert title
+    expect(this.pageTitle).toContainText('Most Wanted');
   }
 }
