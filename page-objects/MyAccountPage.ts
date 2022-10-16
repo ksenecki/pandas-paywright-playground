@@ -10,6 +10,7 @@ export class MyAccountPage {
   readonly loginPasswordInput: Locator;
   readonly loginSubmitButton: Locator;
   readonly errorMessage: Locator;
+  readonly lostPassword: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -25,6 +26,7 @@ export class MyAccountPage {
       '.login > p:nth-of-type(3) > .button'
     );
     this.errorMessage = page.locator('.woocommerce-error > li');
+    this.lostPassword = page.locator('.lost_password > a');
   }
 
   async loadMyAccountPage() {

@@ -18,7 +18,7 @@ test.describe('Test Login Form', () => {
     );
   });
 
-  test('Empty Register Email field', async ({ page }) => {
+  test('Empty Login User field', async ({ page }) => {
     const randomPassword = await getRandomString();
     await myAccountPage.fillLoginForm('', `${randomPassword}`);
     await myAccountPage.loginSubmitButton.click();
@@ -27,12 +27,17 @@ test.describe('Test Login Form', () => {
     );
   });
 
-  test('Empty Register Password field', async ({ page }) => {
+  test('Empty Login Password field', async ({ page }) => {
     const randomEmail = (await getRandomString()) + '@example.com';
     await myAccountPage.fillLoginForm(`${randomEmail}`, '');
     await myAccountPage.loginSubmitButton.click();
     expect(myAccountPage.errorMessage).toContainText(
       'Error: A user could not be found with this email address.'
     );
+  });
+
+  test('Lost Password redirect', async ({ page }) => {
+    await myAccountPage.lostPassword.click();
+    await expect(page).toHaveURL('/my-account/lost-password/');
   });
 });
