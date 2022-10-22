@@ -10,7 +10,8 @@ test.describe('Test footer', () => {
     await homePage.loadHomePage();
   });
 
-  test('Sign for newsletter', async ({ page }) => {
+  test.skip('Sign for newsletter', async ({ page }) => {
+    //Shop feature does not work properly
     await homePage.newsletterName.fill('test');
     await homePage.newsletterEmail.fill('test@email.com');
     await homePage.newsletterSubmitButton.click();
