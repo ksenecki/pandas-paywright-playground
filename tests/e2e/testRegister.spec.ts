@@ -12,14 +12,15 @@ test.describe('Test Register Form', () => {
   });
 
   test.skip('Empty Register form', async ({ page }) => {
-    //Test doesn't work properly
+    //Test may not work properly
     await myAccountPage.registerSubmitButton.click();
     expect(myAccountPage.errorMessage).toContainText(
       'Error: Please provide a valid email address.'
     );
   });
 
-  test('Empty Register Email field', async ({ page }) => {
+  test.skip('Empty Register Email field', async ({ page }) => {
+    //Test may not work properly
     const randomPassword = await getRandomString();
     await myAccountPage.fillRegisterForm('', `${randomPassword}`);
     await myAccountPage.registerSubmitButton.click();
