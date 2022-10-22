@@ -461,13 +461,13 @@
   dependencies:
     "@octokit/openapi-types" "^12.11.0"
 
-"@playwright/test@^1.27.0":
-  "integrity" "sha512-L4BswoJvGkFsEHhEgzVNHBnkFB1FbnBQn3QmvTl7+AouoJQ4a8tLwZKvytdovCsNi7B5cXuRo58yGvfM5PnExw=="
-  "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.27.0.tgz"
-  "version" "1.27.0"
+"@playwright/test@^1.27.1":
+  "integrity" "sha512-mrL2q0an/7tVqniQQF6RBL2saskjljXzqNcCOVMUjRIgE6Y38nCNaP+Dc2FBW06bcpD3tqIws/HT9qiMHbNU0A=="
+  "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.27.1.tgz"
+  "version" "1.27.1"
   dependencies:
     "@types/node" "*"
-    "playwright-core" "1.27.0"
+    "playwright-core" "1.27.1"
 
 "@trivago/prettier-plugin-sort-imports@^3.3.0":
   "integrity" "sha512-1y44bVZuIN0RsS3oIiGd5k8Vm3IZXYZnp4VsP2Z/S5L9WAOw43HE2clso66M2S/dDeJ+8sKPqnHsEfh39Vjs3w=="
@@ -1454,10 +1454,10 @@
   "resolved" "https://registry.npmjs.org/pidtree/-/pidtree-0.6.0.tgz"
   "version" "0.6.0"
 
-"playwright-core@1.27.0":
-  "integrity" "sha512-VBKaaFUVKDo3akW+o4DwbK1ZyXh46tcSwQKPK3lruh8IJd5feu55XVZx4vOkbb2uqrNdIF51sgsadYT533SdpA=="
-  "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.27.0.tgz"
-  "version" "1.27.0"
+"playwright-core@1.27.1":
+  "integrity" "sha512-9EmeXDncC2Pmp/z+teoVYlvmPWUC6ejSSYZUln7YaP89Z6lpAaiaAnqroUt/BoLo8tn7WYShcfaCh+xofZa44Q=="
+  "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.27.1.tgz"
+  "version" "1.27.1"
 
 "prelude-ls@^1.2.1":
   "integrity" "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="

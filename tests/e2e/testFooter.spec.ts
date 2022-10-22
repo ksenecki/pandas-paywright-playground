@@ -7,7 +7,7 @@ test.describe('Test footer', () => {
   test.beforeEach(async ({ page }, testInfo) => {
     allure.suite('E2E: Footer');
     homePage = new HomePage(page);
-    await homePage.loadHomepage();
+    await homePage.loadHomePage();
   });
 
   test('Sign for newsletter', async ({ page }) => {

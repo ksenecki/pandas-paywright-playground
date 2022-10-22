@@ -17,14 +17,14 @@ jobs:
           node-version: 16
           cache: 'npm'
           cache-dependency-path: package-lock.json
+      - name: Run Action file
+        uses: ./.github/workflows/
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run your tests
         run: npx playwright test --reporter=line
-      - name: Run my action
-        uses: ./.github/workflows/
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v2
