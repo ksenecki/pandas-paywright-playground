@@ -5,7 +5,7 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
-    
+
 jobs:
   test:
     timeout-minutes: 60
@@ -23,6 +23,8 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run your tests
         run: npx playwright test --reporter=line
+      - name: Run my action
+        uses: ./.github/workflows/
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v2

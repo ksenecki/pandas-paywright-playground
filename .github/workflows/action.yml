@@ -1,0 +1,6 @@
+name: 'Pandas Playwright Playground'
+author: 'Kamil Senecki'
+description: 'Me playing with Playwright'
+
+runs:
+  using: 'node16'
