@@ -2,7 +2,7 @@ import { ShirtsPage } from '@page-objects/ShirtsPage';
 import { expect, test } from '@playwright/test';
 import { allure } from 'allure-playwright';
 
-test.describe.only('Shirts products', () => {
+test.describe('Shirts products', () => {
   let shirtsPage: ShirtsPage;
   test.beforeEach(async ({ page }, testInfo) => {
     allure.suite('E2E: Shirts');
@@ -71,7 +71,6 @@ test.describe.only('Shirts products', () => {
   test('Test sale tag', async ({}) => {
     await shirtsPage.sortingSelector.selectOption({ label: 'Default sorting' });
     const product = await shirtsPage.productsList.first().innerText();
-    console.log(product);
     expect(product).toContain('Sale!');
   });
 });
