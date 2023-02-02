@@ -4,9 +4,10 @@
   "description": "Pandas playground for Playwright",
   "main": "index.js",
   "scripts": {
-    "tests:chrome": "playwright test/e2e --config=playwright.config.ts --project=Chromium",
-    "tests:firefox": "playwright test/e2e --config=playwright.config.ts --project=Firefox",
-    "tests:webkit": "playwright test/e2e --config=playwright.config.ts --project=Webkit",
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "tests:pdf": "playwright test --config=pdf.config.ts --project=Chromium",
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "lint": "eslint ."
@@ -25,11 +26,13 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",
+    "compare-pdf": "^1.1.8",
     "delay": "^5.0.0",
-    "eslint": "^8.23.0"
+    "eslint": "^8.23.0",
+    "pdf2json": "^3.0.2"
   },
   "devDependencies": {
-    "@playwright/test": "^1.27.1",
+    "@playwright/test": "^1.30.0",
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
     "allure-playwright": "^2.0.0-beta.19",
     "husky": "^8.0.1",
@@ -42,5 +45,6 @@
   "bugs": {
     "url": "https://github.com/ksenecki/pandas-paywright-playground/issues"
   },
-  "homepage": "https://github.com/ksenecki/pandas-paywright-playground#readme"
+  "homepage": "https://github.com/ksenecki/pandas-paywright-playground#readme",
+  "type": "module"
 }
