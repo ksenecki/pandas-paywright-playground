@@ -6,7 +6,7 @@ automation e2e tests for `http://skleptest.pl/`
 
 ## Project requirements
 
-1. [Node 16+](https://nodejs.org/en/docs/)
+1. [Node 18+](https://nodejs.org/en/docs/)
 2. optional [yarn](https://yarnpkg.com/package/doc)
 
 ## How to setup the Project
@@ -41,6 +41,28 @@ automation e2e tests for `http://skleptest.pl/`
 Simple API tests using `https://reqres.in/`, `https://jsonplaceholder.typicode.com/` or `https://httpbin.org/`
 
 - run `npx playwright test --config=api.config.ts`
+
+## Visual PDF tests
+
+- `npm run test:pdf`
+
+Using [compare-pdf](https://www.npmjs.com/package/compare-pdf)
+
+```
+sudo apt-get install graphicsmagick
+sudo apt-get install imagemagick
+sudo apt-get install ghostscript
+```
+
+In order to use ImageMagic `policy.xml` modification is needed
+Use `sudo chmod 777 ~/etc/ImageMagick-6/policy.xml` and modify `policy.xml` as follows:
+change `rights="none"` to `rights"read|write"` in line `<policy domain="module" rights="read|write" pattern="PDF" />`
+
+## PDF content tests
+
+- `npm run test:pdf`
+- package used: [pdf2json](https://www.npmjs.com/package/pdf2json)
+- this is why `Node 18+` is needed
 
 ## Debugging
 
