@@ -1,5 +1,6 @@
 // @ts-ignore
 import { PdfFileType } from './types';
+// @ts-ignore
 import PDFParser from 'pdf2json';
 
 export async function getPDFContents(
