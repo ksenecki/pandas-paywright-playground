@@ -54,7 +54,7 @@ sudo apt-get install imagemagick
 sudo apt-get install ghostscript
 ```
 
-In order to use ImageMagic policy modification is needed
+In order to use ImageMagic `policy.xml` modification is needed
 Use `sudo chmod 777 ~/etc/ImageMagick-6/policy.xml` and modify `policy.xml` as follows:
 change `rights="none"` to `rights"read|write"` in line `<policy domain="module" rights="read|write" pattern="PDF" />`
 

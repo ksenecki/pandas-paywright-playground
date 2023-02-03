@@ -5,12 +5,25 @@ import ComparePdf from 'compare-pdf';
 test.describe('PDF tests', () => {
   test.only('Read pdf file', async () => {
     const pdfContents = await getPDFContents(
-      './data/baselinePdfs/baseline.pdf'
+      './data/baselinePdfs/LoremIpsum.pdf'
     );
-
-    for (let i = 0; i < 20; i++) {
-      console.log(pdfContents.Pages[0].Texts[`${i}`].R[0].T);
+    let pdfTextArr = [];
+    for (let i = 0; i < pdfContents.Pages[0].Texts.length; i++) {
+      pdfTextArr.push(pdfContents.Pages[0].Texts[`${i}`].R[0].T);
     }
+    const regExpClear = new RegExp(',', 'g');
+    const regExpSpace = new RegExp('%20', 'g');
+    const regExpComma = new RegExp('%2C', 'g');
+    const regExpQuestion = new RegExp('%3F', 'g');
+
+    const pdfText = pdfTextArr
+      .join()
+      .replace(regExpClear, '')
+      .replace(regExpComma, ',')
+      .replace(regExpSpace, ' ')
+      .replace(regExpQuestion, '?');
+    console.log(pdfText);
+    expect(pdfText).toContain('Neque porro quisquam est');
   });
 
   const config = {
