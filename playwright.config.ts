@@ -7,7 +7,7 @@ const config: PlaywrightTestConfig = {
   reporter: process.env.CI ? 'github' : 'list',
   use: {
     headless: true,
-    baseURL: 'http://skleptest.pl/',
+    baseURL: 'https://skleptest.pl/',
     viewport: { width: 1280, height: 720 },
     actionTimeout: 15000,
     ignoreHTTPSErrors: true,
