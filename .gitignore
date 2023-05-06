@@ -1,6 +1,7 @@
 /node_modules
 /test-results
 /playwright-report
+/lighthouse-report
 /allure-results
 /allure-report
 *spec.ts-snapshots

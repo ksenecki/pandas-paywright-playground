@@ -80,3 +80,11 @@ change `rights="none"` to `rights"read|write"` in line `<policy domain="module" 
 - check envs with `echo $JAVA_HOME`
 - generate report `allure generate allure-results -o allure-report --clean`
 - open Allure report `allure open allure-report`
+
+## Lighthouse
+
+[Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/#cli) is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO and more.
+
+To run Lighhouse use `npm run lighthouse` command, reports will be generated in html format in root directory with name "LighthouseReport.html"
+
+To run Playwright test runner with Lighthouse test use `npm run tests:audit` command

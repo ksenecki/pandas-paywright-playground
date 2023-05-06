@@ -8,6 +8,8 @@
     "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
     "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
     "tests:pdf": "playwright test --config=pdf.config.ts --project=Chromium",
+    "tests:audit": "playwright test --config=lighthouse.config.ts --project=Chromium",
+    "lighthouse": "node tests/lighthouse/lighthouse.js",
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "lint": "eslint ."
@@ -29,14 +31,18 @@
     "compare-pdf": "^1.1.8",
     "delay": "^5.0.0",
     "eslint": "^8.23.0",
-    "pdf2json": "^3.0.2"
+    "get-port": "^6.1.2",
+    "pdf2json": "^3.0.2",
+    "playwright": "^1.33.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.30.0",
+    "@playwright/test": "^1.33.0",
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
     "allure-playwright": "^2.0.0-beta.19",
     "husky": "^8.0.1",
+    "lighthouse": "^10.2.0",
     "lint-staged": "^13.0.3",
+    "playwright-lighthouse": "^3.1.0",
     "prettier": "2.7.1"
   },
   "lint-staged": {
