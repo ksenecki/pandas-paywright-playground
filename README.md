@@ -88,3 +88,9 @@ change `rights="none"` to `rights"read|write"` in line `<policy domain="module" 
 To run Lighhouse use `npm run lighthouse` command, reports will be generated in html format in root directory with name "LighthouseReport.html"
 
 To run Playwright test runner with Lighthouse test use `npm run tests:audit` command
+
+## Artillery
+
+[Artillery](https://github.com/artilleryio/artillery-engine-playwright) is a powerful tool to perform load tests. This engine a.lows us to combine Playwright with Artillery to be able to launch a whole lot of real browsers to do full browser load testing.
+
+To run Artillery use `artillery run ./tests/artillery/artillerySklepTest.yml` command for simple load tests of `skleptest.pl`

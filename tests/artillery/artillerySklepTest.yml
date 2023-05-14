@@ -1,0 +1,15 @@
+config:
+  target: https://skleptest.pl/
+  payload:
+    - path: ./pages.csv
+      fields: ['url']
+  # Enable the Playwright engine:
+  engines:
+    playwright: { aggregateByName: true }
+  processor: './sklepTest.ts'
+scenarios:
+  - name: Test Sklep
+    engine: playwright
+    # flowFunction: "testSklep"
+    flowFunction: 'checkPage'
+    flow: []

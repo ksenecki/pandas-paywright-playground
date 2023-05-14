@@ -28,6 +28,8 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",
+    "artillery": "^1.7.9",
+    "artillery-engine-playwright": "^0.2.1",
     "compare-pdf": "^1.1.8",
     "delay": "^5.0.0",
     "eslint": "^8.23.0",
