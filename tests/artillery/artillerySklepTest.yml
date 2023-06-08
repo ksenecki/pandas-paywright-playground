@@ -3,6 +3,10 @@ config:
   payload:
     - path: ./pages.csv
       fields: ['url']
+  # Test phases
+  phases:
+    - arrivalRate: 1
+      duration: 10
   # Enable the Playwright engine:
   engines:
     playwright: { aggregateByName: true }
